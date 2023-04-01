@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function writeText(txt) {
+        document.getElementById("desc").innerHTML = txt;
+        }
+
+        function removeText(txt) {
+        document.getElementById("desc").innerHTML = txt;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Places</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans: ital, wght@0,100;0 ,200;0, 300;0,400; 0,500; 0,600; 0,700;1,100;1,200; 1,300; 1,400; 1,500; 1,600;1,700&displa y=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="../index.html"><img src="image/seanlogo.png" class="logo"></a>
+            <ul>
+            <li><a href="../About me/index.html">ABOUT ME</a></li>
+            <li><a href="../skills, hobbies, interest/index.html">SKILLS, HOBBIES, INTEREST</a></li>
+            <li><a href="../resume/index.html">RESUME</a></li>
+            <li><a href="../photo gallery/index.html">PHOTO GALLERY</a></li>
+            <li><a href="../my beat/index.html">MY BEAT</a></li>
+            <li><a href="../my movies/index.html">MY MOVIES & SHOWS</a></li>
+            <li style="background-color: grey;"><a href="../dream places/index.html"><h3>DREAM PLACES</h3></a></li>
+            <li><a href="../bucket list/index.html">BUCKET LIST</a></li>
+            </ul>
+        </nav>
+        <div class="bg" style="height: 100vh;">
+            <h1 style="text-align: center; background-color: #db9e02; padding-bottom: 20px;"><br>Dream Places to Visit</h1>
+            <div>
+                <img src="image/map1.png" class="flag" usemap="#image_map">
+                <map name="image_map">
+                    <area alt="philippines" title="philippines" href="philippines.html" coords="1121,516,30" shape="circle">
+                  <area alt="Poland" title="Poland" href="morocco.html" coords="599,34,727,113" shape="rect" onmouseover="writeText('Places I want to Visit in Poland:<br><br><li>Auschwitz</li><li>Wawel Royal Castle</li><li>Old Town Market Square</li>')" onmouseout="removeText('Mouse over the locations in the map <br>to see the different descriptions.')">
+                  <area alt="Japan" title="Japan" href="italy.html" coords="945,282,1074,364" shape="rect" onmouseover="writeText('Places I want to Visit in Japan:<br><br><li>Shibuya Crossing</li><li>Mount Fuji</li><li>Itsukushima Shrine</li>')" onmouseout="removeText('Mouse over the locations in the map <br>to see the different descriptions.')">
+                  <area alt="Greece" title="Greece" href="brazil.html" coords="598,335,726,415" shape="rect" onmouseover="writeText('Places I want to Visit in Greece:<br><br><li>Partenon</li><li>Santorini</li><li>Paros</li>')" onmouseout="removeText('Mouse over the locations in the map <br>to see the different descriptions.')">
+                </map>
+                <div>
+                <p id="desc" class="message"> Mouse over the locations in the map <br>to see the different descriptions.</p>
+                </div>
+            </div>
+    </div>
